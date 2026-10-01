@@ -1,0 +1,24 @@
+dataset_name: "customer_data"
+
+required_columns:
+  - customer_id
+  - email
+  - signup_date
+  - amount_spent
+
+missing_value_strategy:
+  text_columns: "Unknown"
+  numeric_columns: "median"
+
+duplicate_check_columns:
+  - customer_id
+
+date_columns:
+  - signup_date
+
+numeric_range_checks:
+  amount_spent:
+    min: 0
+    max: 100000
+
+quality_threshold: 80

@@ -1,0 +1,8 @@
+
+customer_id,email,signup_date,amount_spent
+1,john@email.com,2024-01-15,250
+2,mary@email.com,2024-02-20,180
+3,alex@email.com,2024-03-05,320
+4,sara@email.com,2024-03-10,150
+5,mike@email.com,2024-04-05,5000
+6,nina@email.com,2024-05-12,90
