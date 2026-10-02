@@ -22,7 +22,15 @@ if os.path.exists(log_path):
     else:
         st.success("✅ Data quality is healthy")
 
-    st.subheader("Full History")
+        st.subheader("Full History")
     st.dataframe(log_df, use_container_width=True)
+
+    csv_data = log_df.to_csv(index=False)
+    st.download_button(
+        label="📥 Download Quality History as CSV",
+        data=csv_data,
+        file_name="quality_history.csv",
+        mime="text/csv"
+    )
 else:
     st.warning("No quality history yet. Run dataguard.py first to generate data.")
