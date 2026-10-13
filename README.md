@@ -21,6 +21,10 @@ streamlit run app.py
 ## Tech stack
 Python, Pandas, YAML, Streamlit
 
+   ## Live Demo
+
+   Try the app here: https://dataguard-akshaya.streamlit.app/
+
 ## Future improvements
 - Email/Slack alerts instead of console warnings
 - Support for multiple datasets tracked in parallel
